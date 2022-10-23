@@ -1,6 +1,5 @@
 plugins {
     `java-library`
-    `maven-publish`
 }
 
 repositories {
@@ -29,7 +28,7 @@ repositories {
 
 dependencies {
     api("net.dv8tion:JDA:5.0.0-alpha.21")
-    api("dev.blocky.library:jda-commons:1.2.0-pr.2")
+    api("dev.blocky.library:jda-commons:1.2.0-pr.4")
     api("dev.blocky.library:tixte4j:1.1.0")
     api("org.slf4j:slf4j-api:2.0.3")
     api("ch.qos.logback:logback-classic:1.4.4")
@@ -39,7 +38,7 @@ dependencies {
 }
 
 group = "dev.blocky.discord"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Discord bot for sending voice messages."
 
 java {

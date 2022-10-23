@@ -17,6 +17,14 @@
 This is a Discord bot written in `Java` with the JDA (Java Discord API) library.
 <p>At the moment i don't host this bot, but if you want to host it, you are allowed to do that.
 
+## Summary
+
+1. [Concept](#concept)
+2. [Useful links](#useful-links)
+3. [Requirements](#requirements)
+4. [Contribution](#contribution)
+5. [Dependencies](#dependencies)
+
 ## Concept
 
 1. You are joining a specific `audio channel` (voice- or stagechannel) 
@@ -62,8 +70,8 @@ When a feature is introduced to replace or enhance existing functionality we mig
 A deprecated method/class usually has a replacement mentioned in its documentation which should be switched to.
 <br>Deprecated functionality might or might not exist in the next minor release. (Hint: The minor version is the `MM` of `XX.MM.RR(-TT.ZZ)` in our version format)
 
-It is possible that some features are deprecated without replacement, in this case the functionality is no longer supported by either the Tixte4J structure
-due to fundamental changes or due to Tixte-API changes that cause it to be removed.
+It is possible that some features are deprecated without replacement, in this case the functionality is no longer supported by either the Tixte4J/JDA(-C) structure
+due to fundamental changes or due to Tixte-API/Discord-API changes that cause it to be removed.
 
 We highly recommend discontinuing usage of deprecated functionality and update by going through each minor release instead of jumping.
 <br>For instance, when updating from version `1.0.0-beta.1` to version `1.0.0-rc.2` you should do the following:
@@ -77,6 +85,7 @@ version was by looking at the [release page](https://github.com/BlockyDotJar/Dis
 ## Dependencies
 
 This project requires **Java 19+**
+<br>All dependencies are managed automatically by Gradle.
 
 * JDA
     * Version: **v5.0.0-alpha.21**
