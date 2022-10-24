@@ -11,6 +11,7 @@ module discordvoicemessages {
     requires jdacommons;
     requires tixte4j;
     requires org.slf4j;
+    requires slf4jfbl;
 
     requires org.jetbrains.annotations;
 
