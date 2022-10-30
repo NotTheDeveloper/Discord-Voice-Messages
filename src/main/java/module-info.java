@@ -2,7 +2,8 @@
  * A Discord bot for sending voice messages.
  */
 module discordvoicemessages {
-    requires java.datatransfer;
+    uses org.slf4j.spi.SLF4JServiceProvider;
+
     requires java.desktop;
 
     requires jdk.incubator.concurrent;
@@ -11,7 +12,6 @@ module discordvoicemessages {
     requires jdacommons;
     requires tixte4j;
     requires org.slf4j;
-    requires slf4jfbl;
 
     requires org.jetbrains.annotations;
 

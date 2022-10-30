@@ -86,7 +86,8 @@ public class DiscordBot extends ListenerAdapter
                                 CacheFlag.CLIENT_STATUS,
                                 CacheFlag.ACTIVITY,
                                 CacheFlag.EMOJI,
-                                CacheFlag.STICKER
+                                CacheFlag.STICKER,
+                                CacheFlag.SCHEDULED_EVENTS
                         )
                 )
                 // Policy which decides whether a member (and respective user) should be kept in cache.
@@ -102,7 +103,7 @@ public class DiscordBot extends ListenerAdapter
                 .build();
 
         // Creates a *new* TixteClientBuilder instance.
-        TixteClientBuilder builder = new TixteClientBuilder()
+        final TixteClientBuilder builder = new TixteClientBuilder()
                 // Sets the API-key, which is required for most of the methods.
                 // This method also sets the cache policy. I really recommend to set this to ALL.
                 // If this is equal to null or not set, this will be automatically set to NONE.
@@ -150,10 +151,12 @@ public class DiscordBot extends ListenerAdapter
     {
         new Thread(() ->
         {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+            final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
             try
             {
-                String line = reader.readLine();
+                final String line = reader.readLine();
+
                 while (line != null)
                 {
                     if (line.equalsIgnoreCase("exit") && jda != null)
@@ -253,7 +256,7 @@ public class DiscordBot extends ListenerAdapter
                 // Deletes the file to not waste memory.
                 voiceFile.delete();
             }
-            catch (@NotNull Exception e)
+            catch (Exception e)
             {
                 // There is a small chance, that the okhttp reconnect fails.
                 if (e instanceof SocketTimeoutException)

@@ -28,8 +28,8 @@ repositories {
 
 dependencies {
     api("net.dv8tion:JDA:5.0.0-alpha.22")
-    api("dev.blocky.library:jda-commons:1.2.0-pr.5")
-    api("dev.blocky.library:tixte4j:1.1.1")
+    api("dev.blocky.library:jda-commons:1.2.0-pr.6")
+    api("dev.blocky.library:tixte4j:1.1.3")
     api("org.slf4j:slf4j-api:2.0.3")
     api("ch.qos.logback:logback-classic:1.4.4")
 
@@ -38,7 +38,7 @@ dependencies {
 }
 
 group = "dev.blocky.discord"
-version = "1.0.2"
+version = "1.0.3"
 description = "A Discord bot for sending voice messages."
 
 java {

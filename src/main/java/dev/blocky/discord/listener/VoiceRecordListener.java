@@ -86,7 +86,7 @@ public class VoiceRecordListener extends ListenerAdapter
                     );
                 }
             }
-            catch (@NotNull Exception e)
+            catch (Exception e)
             {
                 e.printStackTrace();
             }
@@ -127,7 +127,7 @@ public class VoiceRecordListener extends ListenerAdapter
                             // Recording a conversation against other users' consent is illegal, and you are violating the Discord Terms of Service.
                             .createRecording(voiceFile);
                 }
-                catch (@NotNull Exception e)
+                catch (Exception e)
                 {
                     e.printStackTrace();
                 }

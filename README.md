@@ -91,10 +91,10 @@ This project requires **Java 19+**
     * Version: **v5.0.0-alpha.22**
     * [Github](https://github.com/DV8FromTheWorld/JDA)
 * JDA-C
-    * Version: **v1.2.0-pr.5**
+    * Version: **v1.2.0-pr.6**
     * [Github](https://github.com/BlockyDotJar/JDA-Commons)
 * Tixte4J
-    * Version: **v1.1.1**
+    * Version: **v1.1.3**
     * [Github](https://github.com/BlockyDotJar/Tixte-Java-Library)
 * slf4j-api
     * Version: **v2.0.3**
