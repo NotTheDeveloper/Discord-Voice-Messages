@@ -94,7 +94,7 @@ This project requires **Java 19+**
     * Version: **v1.2.0-pr.6**
     * [Github](https://github.com/BlockyDotJar/JDA-Commons)
 * Tixte4J
-    * Version: **v1.1.4**
+    * Version: **v1.1.5**
     * [Github](https://github.com/BlockyDotJar/Tixte-Java-Library)
 * slf4j-api
     * Version: **v2.0.3**

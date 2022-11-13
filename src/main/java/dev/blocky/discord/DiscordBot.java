@@ -53,7 +53,7 @@ import java.util.EnumSet;
  * This is the main class of the Discord-Bot.
  *
  * @author BlockyDotJar
- * @version v1.0.0
+ * @version v1.0.1
  * @since v1.0.0
  */
 public class DiscordBot extends ListenerAdapter
@@ -152,7 +152,6 @@ public class DiscordBot extends ListenerAdapter
         new Thread(() ->
         {
             final BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
             try
             {
                 final String line = reader.readLine();
@@ -178,12 +177,7 @@ public class DiscordBot extends ListenerAdapter
                         // Shuts this JDA instance down and closes all its connections.
                         jda.shutdown();
 
-                        // This is needed, because the cache could my something corrupt
-                        if (client.getHttpClient().cache() != null)
-                        {
-                            client.pruneCache();
-                        }
-
+                        client.pruneCache();
                         client.cancelRequests();
 
                         // Terminates the currently running JVM.
