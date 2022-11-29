@@ -88,16 +88,16 @@ This project requires **Java 19+**
 <br>All dependencies are managed automatically by Gradle.
 
 * JDA
-    * Version: **v5.0.0-alpha.22**
+    * Version: **v5.0.0-beta.1*
     * [Github](https://github.com/DV8FromTheWorld/JDA)
 * JDA-C
-    * Version: **v1.2.0-pr.7**
+    * Version: **v1.2.0**
     * [Github](https://github.com/BlockyDotJar/JDA-Commons)
 * Tixte4J
-    * Version: **v1.1.7**
+    * Version: **v1.1.8**
     * [Github](https://github.com/BlockyDotJar/Tixte-Java-Library)
 * slf4j-api
-    * Version: **v2.0.4**
+    * Version: **v2.0.5**
     * [Github](https://github.com/qos-ch/slf4j)
 * logback-classic
     * Version: **v1.4.5**

@@ -27,10 +27,10 @@ repositories {
 }
 
 dependencies {
-    api("net.dv8tion:JDA:5.0.0-alpha.22")
-    api("dev.blocky.library:jda-commons:1.2.0-pr.7")
-    api("dev.blocky.library:tixte4j:1.1.7")
-    api("org.slf4j:slf4j-api:2.0.4")
+    api("net.dv8tion:JDA:5.0.0-beta.1")
+    api("dev.blocky.library:jda-commons:1.2.0")
+    api("dev.blocky.library:tixte4j:1.1.8")
+    api("org.slf4j:slf4j-api:2.0.5")
     api("ch.qos.logback:logback-classic:1.4.5")
 
     compileOnly("com.google.errorprone:error_prone_annotations:2.16")
@@ -38,7 +38,7 @@ dependencies {
 }
 
 group = "dev.blocky.discord"
-version = "1.0.6"
+version = "1.0.7"
 description = "A Discord bot for sending voice messages."
 
 java {
