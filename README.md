@@ -88,7 +88,7 @@ This project requires **Java 19+**
 <br>All dependencies are managed automatically by Gradle.
 
 * JDA
-    * Version: **v5.0.0-beta.1*
+    * Version: **v5.0.0-beta.1**
     * [Github](https://github.com/DV8FromTheWorld/JDA)
 * JDA-C
     * Version: **v1.2.0**
